@@ -1,0 +1,34 @@
+1. Creación de Pedidos (diferentes tipos, con proceso específico)
+
+ 	Uso del Factory (ProductoFactory) para crear instancias específicas de pedidos (café, torta, combos).
+
+        Cada clase (Cafe, Torta, etc.) tiene su propia implementación de Preparar(), respetando su proceso específico.
+
+    Patrón asociado: Factory.
+
+2. Estructura de los Pedidos (simples o compuestos)
+
+
+        Implementado el patrón Composite con PedidoCompuesto que puede contener otros Pedido (simples o compuestos).
+
+        Esto permite crear combos que incluyen múltiples productos y tratarlos uniformemente.
+
+
+3. Notificación de Pedidos (cliente y empleado)
+
+
+        Implementado el patrón Observer con PedidoManager que maneja una lista de IObserver (clientes y empleados).
+
+        Cuando el pedido está listo, se notifica a los observadores correspondientes.
+
+    Patrón asociado: Observer.
+
+4. Gestión de Descuentos (diferentes estrategias)
+
+    Cumplido:
+
+        Implementaste el patrón Strategy con IDescuentoStrategy y sus variantes (DescuentoPorVolumen, DescuentoPorMembresia, etc.).
+
+        Las estrategias pueden combinarse con DescuentoCombinado para aplicar varios descuentos secuencialmente.
+
+    Patrón asociado: Strategy.
